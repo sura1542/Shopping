@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "shoppingappHomework",
+    "slug": "shoppingappHomework",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "shoppingappHomework"
+}
