@@ -392,21 +392,24 @@ const MyCart = ({navigation}) => {
               <View style={{paddingLeft: 10, paddingRight: 10}}>
                 <Text>Input Number</Text>
               </View>
-              <TextInput
-                style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginVertical: 10, paddingHorizontal: 10, paddingLeft: 10, paddingRight: 10 }}
-                placeholder="Enter number to subtract"
-                keyboardType="numeric"
-                value={inputValue}
-                onChangeText={setInputValue}
-              />
-              <View style={{paddingLeft: 10, paddingRight: 10}}>
-                <Button title="Save" onPress={handleSubtraction} />
+              <View style={{flexDirection: 'row', marginVertical: 10, paddingHorizontal: 10}}>
+                <TextInput
+                  style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginVertical: 10, paddingHorizontal: 10, paddingLeft: 10, paddingRight: 10 }}
+                  placeholder="Enter number to subtract"
+                  keyboardType="numeric"
+                  value={inputValue}
+                  onChangeText={setInputValue}
+                />
+                <View style={{paddingLeft: 10, paddingRight: 10, height: 40, marginVertical: 10, paddingHorizontal: 10}}>
+                  <Button title="Save" onPress={handleSubtraction} />
+                </View>
               </View>
             </View>
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
               <View style={{paddingLeft: 10, paddingRight: 10}}>
                 <Text>Inout Percentage (like 10%) </Text>
               </View>
+              <View style={{flexDirection: 'row', marginVertical: 10, paddingHorizontal: 10}}>
               <TextInput
                 style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginVertical: 10, paddingHorizontal: 10}}
                 placeholder="Enter Percentage to subtract"
@@ -414,14 +417,16 @@ const MyCart = ({navigation}) => {
                 value={inputPercentage}
                 onChangeText={setInputPercentage}
               />
-              <View style={{paddingLeft: 10, paddingRight: 10}}>
+              <View style={{paddingLeft: 10, paddingRight: 10, marginVertical: 10, paddingHorizontal: 10}}>
                 <Button title="Save" onPress={handleSubtractionPercentage} />
               </View>
             </View>
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+            </View>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',}}>
               <View style={{paddingLeft: 10, paddingRight: 10}}>
                 <Text>Input Point</Text>
               </View>
+              <View style={{flexDirection: 'row', marginVertical: 10, paddingHorizontal: 10}}>
               <TextInput
                 style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginVertical: 10, paddingHorizontal: 10, paddingLeft: 10, paddingRight: 10 }}
                 placeholder="Enter number to subtract"
@@ -429,9 +434,10 @@ const MyCart = ({navigation}) => {
                 value={inputPoint}
                 onChangeText={setInputPoint}
               />
-              <View style={{paddingLeft: 10, paddingRight: 10}}>
+              <View style={{paddingLeft: 10, paddingRight: 10, marginVertical: 10, paddingHorizontal: 10}}>
                 <Button title="Save" onPress={handleSubtractionPoint} />
               </View>
+            </View>
             </View>
             <View
               style={{
